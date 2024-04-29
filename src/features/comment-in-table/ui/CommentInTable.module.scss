@@ -1,0 +1,11 @@
+.wrapper {
+	@apply relative flex items-center gap-5;
+
+	> p {
+		@apply truncate;
+	}
+}
+
+.comment {
+	@apply select-text;
+}

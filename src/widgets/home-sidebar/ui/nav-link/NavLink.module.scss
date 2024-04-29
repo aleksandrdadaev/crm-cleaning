@@ -1,0 +1,28 @@
+.wrapper {
+	@apply rounded-10 p-10 flex items-center gap-10 bg-white transition-colors;
+
+	> div:first-child {
+		@apply shrink-0;
+	}
+
+	&:not(.active):hover {
+		@apply bg-gray-100;
+	}
+}
+
+.text {
+	@apply block T2 transition-colors;
+}
+
+.active {
+	@apply bg-primary;
+
+	.text {
+		@apply text-white;
+	}
+
+	> div:first-child {
+		filter: brightness(0) saturate(100%) invert(95%) sepia(66%) saturate(2%)
+			hue-rotate(238deg) brightness(115%) contrast(100%);
+	}
+}

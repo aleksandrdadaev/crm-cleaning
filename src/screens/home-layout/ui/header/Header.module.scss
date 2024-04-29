@@ -1,0 +1,12 @@
+.wrapper {
+	@apply w-full rounded-10 p-10 box-shadow bg-white flex items-center gap-10;
+
+	> a,
+	div {
+		@apply shrink-0;
+	}
+
+	> search {
+		@apply grow;
+	}
+}

@@ -1,0 +1,15 @@
+.success {
+	@apply bg-lightGreen #{!important};
+}
+
+.error {
+	@apply bg-coral #{!important};
+}
+
+.info {
+	@apply bg-primary #{!important};
+}
+
+.warning {
+	@apply bg-orange #{!important};
+}

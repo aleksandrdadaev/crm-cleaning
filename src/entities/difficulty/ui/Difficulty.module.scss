@@ -1,0 +1,7 @@
+.wrapper {
+	@apply h-24 w-24 flex justify-between items-center;
+}
+
+.span {
+	@apply block h-full w-6 rounded-5 bg-gray-100;
+}

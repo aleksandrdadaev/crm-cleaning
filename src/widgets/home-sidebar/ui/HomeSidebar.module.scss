@@ -1,0 +1,7 @@
+.wrapper {
+	@apply h-[calc(100%-20px)] w-fit p-10 rounded-10 flex flex-col justify-between bg-white box-shadow;
+}
+
+.open {
+	@apply w-fit  p-10;
+}

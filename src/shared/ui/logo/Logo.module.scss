@@ -1,0 +1,23 @@
+.logo {
+	background: linear-gradient(124deg, #b0dcf6 0%, #b2b5fc 42.19%, #f2a7f7 100%);
+
+	@apply rounded-10  w-fit flex items-center text-white py-6 px-20 shrink-0;
+
+	> span {
+		font-size: 28px;
+		line-height: 32px;
+	}
+}
+
+.crm {
+	@apply T1;
+}
+
+.c,
+.leaning {
+	@apply T2;
+}
+
+.leaning {
+	@apply overflow-hidden;
+}

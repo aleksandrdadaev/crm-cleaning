@@ -1,0 +1,8 @@
+.icon {
+	@apply w-16 h-16;
+}
+
+.active {
+	filter: brightness(0) saturate(100%) invert(58%) sepia(94%) saturate(1269%)
+		hue-rotate(204deg) brightness(101%) contrast(93%);
+}

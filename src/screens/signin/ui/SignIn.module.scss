@@ -1,0 +1,15 @@
+.wrapper {
+	@apply flex flex-col items-center;
+
+	> form {
+		@apply mb-30;
+	}
+}
+
+.heading {
+	@apply mb-50;
+}
+
+.regLink {
+	@apply link T1;
+}

@@ -1,0 +1,15 @@
+.container {
+	@apply p-0;
+}
+
+.toast {
+	@apply m-0 rounded-10 p-10 bg-white box-shadow gap-10;
+}
+
+.body {
+	@apply m-0 p-0 T3 text-black gap-10;
+
+	> div {
+		@apply m-0;
+	}
+}

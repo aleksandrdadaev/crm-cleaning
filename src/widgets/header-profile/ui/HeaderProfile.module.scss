@@ -1,0 +1,19 @@
+.wrapper {
+	@apply flex items-center;
+}
+
+.name {
+	@apply min-w-160 rounded-l-10 py-14 px-18 bg-primary flex justify-center;
+
+	> span {
+		@apply block T1 text-white;
+	}
+}
+
+.logo {
+	@apply rounded-r-10 p-10 bg-gray-100;
+}
+
+.loading {
+	@apply p-0 #{!important};
+}

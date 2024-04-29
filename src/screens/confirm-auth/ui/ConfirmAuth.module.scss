@@ -1,0 +1,15 @@
+.wrapper {
+	@apply flex flex-col items-center pb-50;
+
+	> form {
+		@apply mb-40;
+	}
+
+	> section:last-child {
+		@apply grow;
+	}
+}
+
+.heading {
+	@apply mb-50;
+}

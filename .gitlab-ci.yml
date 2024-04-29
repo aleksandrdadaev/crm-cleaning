@@ -1,0 +1,34 @@
+.base: &base
+  image: docker:24
+  before_script:
+    - echo $CI_JOB_TOKEN | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
+  tags:
+    - shared
+
+stages:
+  - build
+  - publish
+
+build:
+  <<: *base
+  stage: build
+  script:
+#    - apk add date tzdata
+#    - TAG=$(TZ=":Asia/Novokuznetsk" date '+%Y-%m-%d-%H-%M-%S')
+#    - echo $TAG
+    - docker build -t $CI_REGISTRY/crm/frontend:latest . #-t $CI_REGISTRY/crm/frontend:$TAG .
+#    - echo "TAG=${TAG}" >> build.env 
+#  artifacts:
+#    paths:
+#      - build.env
+
+push:
+  <<: *base
+  stage: publish
+  script:
+#    - export $(xargs < build.env)
+#    - echo $TAG
+    - docker push $CI_REGISTRY/crm/frontend:latest # && docker push $CI_REGISTRY/crm/frontend:$TAG
+  needs:
+    - job: build
+#      artifacts: true

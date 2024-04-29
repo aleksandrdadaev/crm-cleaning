@@ -1,0 +1,13 @@
+.body {
+	@apply h-screen w-screen overflow-hidden  pl-20 pt-10 pb-0 grid gap-20;
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: max-content 1fr;
+
+	> header {
+		@apply col-span-full w-[calc(100%-20px)];
+	}
+
+	> main {
+		@apply w-full h-full;
+	}
+}

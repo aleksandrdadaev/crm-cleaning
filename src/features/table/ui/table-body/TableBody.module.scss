@@ -1,0 +1,36 @@
+.wrapper {
+	@apply flex flex-col gap-10;
+}
+
+.rowWrapper {
+	@apply flex items-center;
+}
+
+.open {
+	@apply w-30 h-62 px-3 flex items-center justify-center rounded-l-10 bg-gray-100 transition-colors hover:bg-primary;
+
+	&:hover > div:first-child {
+		filter: brightness(0) saturate(100%) invert(95%) sepia(66%) saturate(2%)
+			hue-rotate(238deg) brightness(115%) contrast(100%);
+	}
+}
+
+.row {
+	@apply h-62 flex items-center gap-30 pl-20 pr-10  rounded-r-10 bg-white;
+}
+
+.cell {
+	@apply px-10;
+
+	> span {
+		@apply block T2 truncate;
+	}
+}
+
+.loading {
+	@apply w-full h-62 flex items-center justify-center;
+}
+
+.loaderIcon {
+	@apply w-44 h-44;
+}

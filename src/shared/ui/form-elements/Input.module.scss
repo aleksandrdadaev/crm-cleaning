@@ -1,0 +1,19 @@
+.label {
+	@apply w-full flex flex-col items-center gap-10;
+}
+
+.input {
+	@apply w-full h-36 rounded-10 p-10 bg-white text-black T2 transition-colors placeholder:text-gray-500;
+}
+
+.gray {
+	@apply bg-gray-100;
+}
+
+.errorInput {
+	@apply bg-coral;
+}
+
+.error {
+	@apply T2 text-coral text-center;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+	@apply w-[calc(100%-20px)] pb-15 border-b border-gray-100 flex justify-between items-center;
+}
+
+.right {
+	@apply flex items-center gap-10;
+}
+
+.create {
+	@apply T1 button-white;
+}
+
+.icon {
+	@apply w-16 h-16;
+}

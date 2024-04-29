@@ -1,0 +1,19 @@
+.wrapper {
+	@apply relative flex items-center;
+}
+
+.counter {
+	@apply min-w-100 flex justify-center items-center rounded-l-10 py-14 px-20 bg-primary;
+
+	> span {
+		@apply block T1 text-white;
+	}
+}
+
+.isLoading {
+	@apply py-0;
+}
+
+.openButton {
+	@apply rounded-r-10 p-10 bg-gray-100;
+}

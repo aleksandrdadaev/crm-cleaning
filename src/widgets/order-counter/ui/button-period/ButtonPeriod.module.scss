@@ -1,0 +1,11 @@
+.button {
+	@apply w-full p-10 rounded-10 bg-white transition-colors text-center T1;
+
+	&:not(.isActive):hover {
+		@apply bg-gray-100;
+	}
+}
+
+.isActive {
+	@apply bg-primary text-white;
+}

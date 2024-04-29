@@ -1,0 +1,23 @@
+.wrapper {
+	@apply flex flex-col items-center;
+
+	> form {
+		@apply mb-30;
+	}
+}
+
+.heading {
+	@apply mb-50;
+}
+
+.footer {
+	@apply flex gap-10;
+
+	> span {
+		@apply T2;
+	}
+}
+
+.signLink {
+	@apply link T1;
+}

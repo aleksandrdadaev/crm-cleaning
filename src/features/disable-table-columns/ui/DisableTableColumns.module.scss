@@ -1,0 +1,9 @@
+.wrapper {
+	@apply relative;
+}
+
+.list {
+	> label {
+		@apply p-5;
+	}
+}

@@ -1,0 +1,12 @@
+.img {
+	@apply relative w-24 h-24 object-center;
+
+	> img {
+		@apply img-cover;
+	}
+}
+
+.purple {
+	filter: brightness(0) saturate(100%) invert(61%) sepia(11%) saturate(2566%)
+		hue-rotate(202deg) brightness(104%) contrast(93%);
+}

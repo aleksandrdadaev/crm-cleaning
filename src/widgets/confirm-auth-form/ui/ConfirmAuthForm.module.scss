@@ -1,0 +1,6 @@
+.form {
+	@apply flex flex-col items-center gap-10;
+	input {
+		@apply w-120 text-center;
+	}
+}

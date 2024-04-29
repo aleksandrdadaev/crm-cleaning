@@ -1,0 +1,23 @@
+.custom {
+	@apply flex gap-10;
+}
+
+.wrapper {
+	@apply relative w-full h-full inset-0 #{!important};
+}
+
+.scroller {
+	@apply scroll-smooth;
+}
+
+.content {
+	@apply p-0 flex flex-col #{!important};
+}
+
+.trackY {
+	@apply relative top-0 right-auto h-250 w-8 shrink-0 rounded-12 bg-gray-100 cursor-pointer #{!important};
+}
+
+.thumbY {
+	@apply rounded-12 bg-primary #{!important};
+}

@@ -1,0 +1,25 @@
+.button {
+	@apply bg-white p-6 rounded-10 transition-colors duration-100;
+
+	&:not(.active):hover {
+		@apply bg-gray-100;
+
+		> div {
+			@apply filter-none;
+		}
+	}
+}
+
+.active {
+	@apply bg-primary;
+
+	> div {
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+			hue-rotate(55deg) brightness(103%) contrast(101%);
+	}
+}
+
+.icon {
+	filter: brightness(0) saturate(100%) invert(55%) sepia(53%) saturate(951%)
+		hue-rotate(206deg) brightness(106%) contrast(93%);
+}

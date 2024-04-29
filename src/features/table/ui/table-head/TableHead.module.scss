@@ -1,0 +1,33 @@
+.wrapper {
+	@apply sticky top-0 z-1 bg-gray-bg;
+}
+
+.row {
+	@apply flex gap-30 pl-50 pr-10 mb-10;
+}
+
+.header {
+	@apply relative flex gap-5 p-10 rounded-10  items-center T2 text-gray-500 transition-colors;
+	@apply font-normal;
+
+	> span {
+		@apply truncate;
+	}
+
+	&.isResizing {
+		background-color: #dbdaff;
+	}
+}
+
+.resize {
+	@apply absolute top-0 right-0 w-10
+	 h-full flex flex-col justify-center items-center cursor-w-resize;
+}
+
+.resizer {
+	@apply block w-2 h-20  bg-gray-500 transition-colors;
+
+	&.isResizing {
+		@apply bg-primary;
+	}
+}

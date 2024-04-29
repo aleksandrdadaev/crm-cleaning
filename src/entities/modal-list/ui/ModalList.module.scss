@@ -1,0 +1,7 @@
+.wrapper {
+	@apply absolute z-2 left-0 top-[calc(100%+10px)] w-full rounded-10 p-10 box-shadow bg-white flex flex-col gap-5;
+}
+
+.left {
+	@apply w-fit left-auto right-0;
+}

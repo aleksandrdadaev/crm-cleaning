@@ -1,0 +1,6 @@
+.wrapper {
+	@apply flex flex-col gap-5;
+	> label {
+		@apply p-5;
+	}
+}

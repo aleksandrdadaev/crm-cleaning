@@ -1,0 +1,7 @@
+.body {
+	@apply w-full h-screen flex flex-col gap-150 pt-10 px-20 pb-100;
+
+	> main {
+		@apply grow;
+	}
+}

@@ -1,0 +1,11 @@
+.buttonEl {
+	@apply T1 button;
+}
+
+.buttonLoading {
+	@apply py-0 h-46 flex justify-center hover:bg-primary;
+}
+
+.loader {
+	@apply h-full aspect-square;
+}
